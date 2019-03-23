@@ -8,8 +8,11 @@
 
 def select_winner(passengers)
   # add the code snippet here!
+  winner = ""
 
   passengers.find do |suite, passenger|
-    passenger.start_with?("A")
+    winner = passenger.start_with?("A")
   end
+
+  winner[:suite_a]
 end
